@@ -1,11 +1,13 @@
-## Sales Insights Data Analysis Project
+## Sales Analytics Project
 
-### Instructions to setup mysql on your local computer
+### Project Overview
+in this, i analyzed a fictional sales data to discover insights that aid informed decision making using Mysql server and Microsoft PowerBI 
+The PowerBI report as well as the database sql dump file can be found in the repository.Fee free to play with the data set.
 
-1. Follow step in this video to install mysql on your local computer
-https://www.youtube.com/watch?v=WuBcTJnIuzo
+### Tools
+Mysql server
+Microsoft PowerBI
 
-1. SQL database dump is in db_dump.sql file above. Download `db_dump.sql` file to your local computer and import it as per instructions given in the tutorial video
 
 ### Data Analysis Using SQL
 
@@ -47,12 +49,7 @@ https://www.youtube.com/watch?v=WuBcTJnIuzo
 and transactions.market_code="Mark001";`
 
 
-Data Analysis Using Power BI
-============================
 
-1. Formula to create norm_amount column
-
-`= Table.AddColumn(#"Filtered Rows", "norm_amount", each if [currency] = "USD" or [currency] ="USD#(cr)" then [sales_amount]*75 else [sales_amount], type any)`
 
 
 
